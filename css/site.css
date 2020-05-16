@@ -1,13 +1,13 @@
 /* Button */
 button {
   font-size: 18px;
-  color: #454545;
+  color: var(--color);
   padding: 7.5px 22.5px 7.5px 22.5px;
   border-radius: 7.5px;
   cursor: pointer;
   transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
-  background-color: white;
-  border: 1.5px solid #454545;
+  background-color: var(--background-color);
+  border: 1.5px solid var(--color);
 }
 
 button:focus {
@@ -15,42 +15,17 @@ button:focus {
 }
 
 button:not(:disabled):hover {
-  color: white;
-  background-color: #454545;
-}
-
-@media (prefers-color-scheme: dark) {
-  button {
-    color: white;
-    background-color: #454545;
-    border-color: white;
-  }
-
-  button:not(:disabled):hover {
-    color: #454545;
-    background-color: white;
-  }
+  color: var(--background-color);
+  background-color: var(--color);
 }
 
 /* a link tags */
 a {
-  border-bottom: 1px solid #454545;
-  color: #454545;
+  border-bottom: 1px solid var(--color);
+  color: var(--color);
   text-decoration: none;
 }
 
 a:hover {
   border-bottom: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  a {
-    border-bottom: 1px solid white;
-    color: white;
-    text-decoration: none;
-  }
-
-  a:hover {
-    border-bottom: 0;
-  }
 }
