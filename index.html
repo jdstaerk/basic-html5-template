@@ -8,6 +8,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Basic HTML5 Template</title>
 
+  <style>
+    body {
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 0 10px;
+      line-height: 1.6;
+      font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      color: #454545
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1.2
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: white;
+        background: #454545
+      }
+
+      a:link {
+        color: #5bf
+      }
+
+      a:visited {
+        color: #ccf
+      }
+    }
+  </style>
   <link rel="stylesheet" href="./css/site.css" />
   <!--Your CSS references-->
 </head>
@@ -22,6 +54,10 @@
     magna aliquyam erat, tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
     vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
     Lorem ipsum dolor sit amet.</p>
+  <p>
+    We include basic styles directly in this <code>index.html</code>. For further basic styling, we use the
+    <code>./css/site.css</code> file.
+  </p>
   <p>Ideas? Feel free to visit
     <a href="https://github.com/jdstaerk/basic-html5-template" target="_blank">github.com</a> and submit an issue or pr.
   </p>
