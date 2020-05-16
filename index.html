@@ -25,18 +25,30 @@
       line-height: 1.2
     }
 
+    a {
+      border-bottom: 1px solid #454545;
+      color: #454545;
+      text-decoration: none;
+    }
+
+    a:hover {
+      border-bottom: 0;
+    }
+
     @media (prefers-color-scheme: dark) {
       body {
         color: white;
         background: #454545
       }
 
-      a:link {
-        color: #5bf
+      a {
+        border-bottom: 1px solid white;
+        color: white;
+        text-decoration: none;
       }
 
-      a:visited {
-        color: #ccf
+      a:hover {
+        border-bottom: 0;
       }
     }
   </style>
